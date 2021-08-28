@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Belajar Aritmatika sederhana sekali</title>
+    </head>
+
+    <body bgcolor="brown">
+        <p>
+            <script language ="JavaScript">
+               /*
+                    let warna = "merah";
+ 
+                    switch (warna){
+                        case "hitam":
+                            teks = "warna hitam";
+                            break;
+                        case "merah":
+                            teks = "Warna merah";
+                            break;
+                        case "hijau":
+                            teks = "Warna hijau";
+                            break;
+                        default:
+                            teks = "Warna tidak terdeteksi";
+
+                            let perhitungan = "+"
+                        
+               */ 
+
+               function jumlah()
+                            {
+                            let angka1 = parseFloat(document.fform.angkaInput1.value); if (isNaN (angka1))//jika bukan angka, maka nilai angka 1 dan angka 2 NOL
+                            //Fungsi parseFloat menentukan apakah karakter pertama dalam string yang ditentukan adalah angka. Jika ya, mem-parsing/diurai/dikonversi string hingga mencapai akhir nomor, dan mengembalikan nomor sebagai nomor, bukan sebagai string.
+                            angka1=0.0;
+                            let angka2 = parseFloat(document.fform.angkaInput2.value); if (isNaN (angka2))
+                            angka2=0.0; 
+                            let hasil = angka1 + angka2;
+                            alert ("Hasil Penjumlahan = " + hasil);
+                            }
+
+                function kurang() 
+                {
+                    let angka1 = parseFloat(document.fform.angkaInput1.value); if (isNaN(angka1))
+                    angka1=0.0;
+                    let angka2 = parseFloat(document.fform.angkaInput2.value); if (isNaN(angka2))
+                    angka2=0.0;
+                    let hasil = angka1 - angka2;
+                    alert ("Hasil Pengurangan = " + hasil);
+                }
+                
+               
+                function dikali() 
+                {
+                    let angka1 = parseFloat(document.fform.angkaInput1.value); if (isNaN(angka1))
+                    angka1=0.0;
+                    let angka2 = parseFloat(document.fform.angkaInput2.value); if (isNaN(angka2))
+                    angka2=0.0;
+                    let hasil = angka1 * angka2;
+                    alert ("Hasil Pengalian = " + hasil);
+                }
+
+                function dibagi() 
+                {
+                    let angka1 = parseFloat(document.fform.angkaInput1.value); if (isNaN(angka1))
+                    angka1=0.0;
+                    let angka2 = parseFloat(document.fform.angkaInput2.value); if (isNaN(angka2))
+                    angka2=0.0;
+                    let hasil = angka1 / angka2;
+                    alert ("Hasil Pembagian = " + hasil);
+                }
+
+              function diboolean() 
+              {
+                    let angka1 = parseFloat(document.fform.angkaInput1.value); if (isNaN(angka1))
+                    angka1=0.0;
+                    let angka2 = parseFloat(document.fform.angkaInput2.value); if (isNaN(angka2))
+                    angka2=0.0;
+                    let hasil = angka1 >= angka2;
+                    if (hasil===true) alert ("Benar jika " + "===> " + angka1 + "lebih besar dari " + angka2)
+                    else if (hasil!=true) alert ("Tidak benar jika " + "===>" + angka1 + "lebih besar dari " + angka2)
+                    else if (hasil===false) alert ("Antara Tidak benar dan benar jika " + "===>" + angka1 + "lebih besar dari " + angka2);
+                  
+                    /* if(nilai >= 90) grade = "A"
+        else if(nilai >= 80) grade = "B+"
+        else if(nilai >= 70) grade = "B"
+        else if(nilai >= 60) grade = "C+"
+        else if(nilai >= 50) grade = "C"
+        else if(nilai >= 40) grade = "D"
+        else if(nilai >= 30) grade = "E"
+        else grade = "F";*/
+              }
+            </script>
+            <form name="fform">
+                <h1><br>Input Angka</h1>
+                <pre>
+                    Angka Pertama : <input type="text" size="12" name="angkaInput1">
+                    
+                    Angka Kedua : <input type="text" size="12" name="angkaInput2">
+                </pre>
+        
+           <p><input type="button" value="Jumlahkan" onclick="jumlah()"></p>
+           <p><input type="button" value="Kurangi" onclick="kurang()"></p>
+           <p><input type="button" value="Dikali" onclick="dikali()"></p>
+           <p><input type="button" value="Dibagi" onclick="dibagi()"></p>
+           <p><input type="button" value="Boolean" onclick="diboolean()"></p>
+            <p></p><input type="reset" value="reset">
+            </form>
+        </p>
+    </br>
+        <center>
+<b>Terima kasih atas kerjasamanya.</b>
+        </center>
+    </body>
+</html>
